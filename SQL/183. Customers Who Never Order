@@ -1,0 +1,7 @@
+# Write your MySQL query statement below
+Select Name as Customers
+From Customers
+Where Customers.Id not in(
+    Select CustomerId
+    From   Orders
+)

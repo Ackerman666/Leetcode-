@@ -1,0 +1,6 @@
+# Write your MySQL query statement below
+Select FirstName, LastName ,City ,State 
+From Person as P left join Address as A
+on P. PersonId = A.PersonId
+
+# 考join用法

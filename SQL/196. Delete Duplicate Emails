@@ -1,0 +1,5 @@
+Delete p1
+From Person as p1 , Person as p2
+Where p1.Id > p2.Id and p1.Email = p2.Email
+
+# delete 用法

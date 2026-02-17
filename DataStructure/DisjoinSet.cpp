@@ -15,10 +15,10 @@ class DisjoinSet{
         }
 
         int find_parent(int member){
-            if(this->parent[member] != member){
-                member = find_parent(this->parent[member]);
+            if(this->parent[member] == member){
+				return member;
             }
-            return(member);
+			return parent[member] = find_parent(this->parent[member]);  // path compress 
         }
 
         void Union(int memberA, int memberB){
